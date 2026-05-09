@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Fragment } from "react";
 
 export const Route = createFileRoute("/admin/calendar")({
   component: CalendarPage,
@@ -30,8 +31,8 @@ function CalendarPage() {
             <div key={h} className="border-b border-r border-border bg-surface px-3 py-2 text-xs font-semibold text-muted-foreground">{h}</div>
           ))}
           {drivers.map((d, i) => (
-            <>
-              <div key={d} className="border-b border-r border-border px-3 py-4 text-sm font-semibold">{d}</div>
+            <Fragment key={d}>
+              <div className="border-b border-r border-border px-3 py-4 text-sm font-semibold">{d}</div>
               {hours.map((h, hi) => {
                 const block = blocks.find((b) => b.driver === i && b.h === hi);
                 return (
@@ -53,7 +54,7 @@ function CalendarPage() {
                   </div>
                 );
               })}
-            </>
+            </Fragment>
           ))}
         </div>
       </div>

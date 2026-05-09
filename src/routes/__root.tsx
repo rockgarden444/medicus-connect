@@ -72,14 +72,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "MediCus — Ihr freundlicher Krankenfahrdienst" },
+      { name: "description", content: "Sicherer Krankentransport in Berlin: Patientenbuchung, Live-Disposition und Fahrer-App auf einer Plattform." },
+      { name: "author", content: "MediCus" },
+      { property: "og:title", content: "MediCus — Krankenfahrdienst" },
+      { property: "og:description", content: "Sicherer Krankentransport mit GPS-Tracking, Rollstuhl- und Liegendfahrzeugen." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
     ],
     links: [
       {

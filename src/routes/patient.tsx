@@ -15,10 +15,10 @@ export const Route = createFileRoute("/patient")({
 
 const tabs = [
   { to: "/patient", label: "Start", icon: Home, exact: true },
-  { to: "/patient/book", label: "Buchen", icon: Plus },
-  { to: "/patient/tracking", label: "Verfolgen", icon: MapPin },
-  { to: "/patient/history", label: "Verlauf", icon: Clock },
-  { to: "/patient/profile", label: "Profil", icon: User },
+  { to: "/patient/book", label: "Buchen", icon: Plus, exact: false },
+  { to: "/patient/tracking", label: "Verfolgen", icon: MapPin, exact: false },
+  { to: "/patient/history", label: "Verlauf", icon: Clock, exact: false },
+  { to: "/patient/profile", label: "Profil", icon: User, exact: false },
 ] as const;
 
 function PatientLayout() {
